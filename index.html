@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet" />
+
+
+  <link rel="stylesheet" href="src/css/main.css" />
+
+  <link rel='icon' href="src/img/favicon.webp" />
+  <title>Aves Nocturnas</title>
+
+</head>
+
+<body>
+
+  <div id="main-container">
+    <!-- Todo vive dentro de este contenedor -->
+
+    <header>
+
+      <nav>
+        <!-- ////// 
+          NAV HAM  
+        ////// -->
+
+        <div class="ham_header">
+          <div class="ham__container">
+            <a href="#"><img class="logoPhone" src="src/img/logo-buho.png" /></a>
+
+            <img class="ham__iconOpen" src="src/img/menu.svg" alt="">
+          </div>
+        </div>
+
+        <div class="ham__menu">
+
+          <img class="ham__iconExit" src="src/img/close.svg" alt="" srcset="">
+
+          <div class="ham__navContainer">
+            <div class="ham__nav">
+              <a class="ham__navLink" href="#">Búho</a>
+            </div>
+            <div class="ham__nav">
+              <a class="ham__navLink" href="#">Lechuza</a>
+            </div>
+            <div class="ham__nav">
+              <a class="ham__navLink" href="#">Tecolote</a>
+            </div>
+            <div class="ham__nav">
+              <a class="ham__navLink" href="#">Mochuelo</a>
+            </div>
+            <div class="ham__nav">
+              <a class="ham__navLink" href="#">Autillo</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ////// 
+          NAV PC  
+        ////// -->
+
+        <a href="#"><img class="logoPc" src="src/img/logo-buho.png" /></a>
+
+        <ul>
+          <li><a href="#" class="link">Búho</a></li>
+          <li><a href="#" class="link">Lechuza</a></li>
+          <li><a href="#" class="link">Tecolote</a></li>
+          <li><a href="#" class="link">Mochuelo</a></li>
+          <li><a href="#" class="link">Autillo</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- ////// 
+     AUDIO PLAYER CARD  
+    ////// -->
+
+    <div class="audio-player__container">
+      <!-- <audio id="player" src="src/img/buho.mp3"></audio> -->
+
+      <div id="audio-visual" onclick="playPause()">
+        <div class="audio-wire audio-wire-1"></div>
+        <div class="audio-wire audio-wire-2"></div>
+        <div class="audio-wire audio-wire-3"></div>
+        <div class="audio-wire audio-wire-4"></div>
+        <div class="audio-wire audio-wire-5"></div>
+        <div class="audio-wire audio-wire-6"></div>
+        <div class="audio-wire audio-wire-7"></div>
+        <div class="audio-wire audio-wire-8"></div>
+        <div class="audio-wire audio-wire-9"></div>
+    </div>
+      <p>Click para escuchar el ulular de un Búho</p>
+    <audio src="src/img/buho.mp3" id="music" loop autoplay></audio>
+    </div>
+
+
+    <!-- <section id="banner">
+        <h2>Halo Infinite</h2>
+        <p>
+          <a href="#" class="green-button">
+            Get it Now <span class="material-icons">&#xe5cc;</span>
+          </a>
+        </p>
+        <p>Available now with Xbox Game Pass</p>
+        <p>
+          <a href="#" class="green-link"
+            >JOIN NOW <span class="material-icons">&#xe5cc;</span></a
+          >
+        </p>
+      </section> -->
+
+    <!-- <section id="videos">
+        <h2>BECOME</h2>
+
+        <p class="w-75">
+          The legendary Halo series returns with the most expansive Master Chief
+          campaign yet and a ground-breaking free to play multiplayer
+          experience.
+        </p>
+
+        <h3>Trailers and Gameplay</h3>
+
+        <div id="slider">
+          <div id="controls">
+            <button id="prev">
+              <span class="material-icons">&#xe5e0;</span>
+            </button>
+            <button id="next">
+              <span class="material-icons">&#xe5e1;</span>
+            </button>
+          </div>
+          <div id="current"></div>
+
+          <div id="videos-container"></div>
+        </div>
+      </section> -->
+
+    <!-- <section id="multi-player">
+        <div class="info">
+          <h2>LEGENDARY MULTIPLAYER, FREED</h2>
+          <p>
+            The next era of Halo begins! To celebrate the 20th Anniversary of
+            the franchise, Halo Infinite's multiplayer beta is available now and
+            free to play on Xbox and PC. Begin your personal Spartan journey
+            today with Season 1, “Heroes of Reach”, and stay tuned for upcoming,
+            limited-time in-game events and exclusive rewards.
+          </p>
+        </div>
+      </section> -->
+
+    <!-- <section id="get-the-game">
+        <h2>Get the game.</h2>
+
+        <div class="item-store">
+          <div class="left">
+            <img src="./src/img/game.png" alt="" />
+          </div>
+
+          <div class="right">
+            <div class="info-product">
+              <h3>Halo Infinite (Campaign)</h3>
+              <h4>Included with Xbox Game Pass Play Halo</h4>
+              <p>
+                Infinite and over 100 more high-quality games for one low
+                monthly price with Xbox Game Pass.
+              </p>
+              <button class="green-button">
+                JOIN XBOX GAME PASS <span class="material-icons">&#xe5cc;</span>
+              </button>
+
+              <h4>Buy Halo Inifnite</h4>
+              <p>$59.99 USD</p>
+              <select name="" id="">
+                <option value="xbox">Xbox</option>
+                <option value="windows">Windows 10 PC</option>
+                <option value="steam">Steam</option>
+              </select>
+              <p>
+                <button class="green-button">
+                  BUY NOW <span class="material-icons">&#xe5cc;</span>
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+  </div>
+
+  <script src="src/js/nav.js" type="module"></script>
+
+  <script src="src/js/main.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+
+
+</body>
+
+</html>

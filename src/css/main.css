@@ -1,0 +1,269 @@
+::-webkit-scrollbar{
+    width: 12px;
+} 
+::-webkit-scrollbar-thumb{
+    /* background: linear-gradient(#FF3575, #9C8AFF); */
+    background-color: rgba(255, 255, 255, 0.726);
+    border-radius: 4px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family:'Montserrat', sans-serif;
+    font-size: 16px;
+
+    background-color: black;
+}
+
+/*´´´´´´´´´´´´
+    NAVBAR
+_____________*/
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li > a {
+    font-size: 20px;
+    display: block;
+    position: relative;
+    padding: 20px 15px 10px 15px;
+    text-decoration: none;
+
+    color: white;
+}
+
+nav ul li .link::before{
+    content: " ";
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scalex(0);
+    transition: transform 0.3s ease;
+
+    background-color: white;
+}
+
+nav ul li .link:hover::before {
+    transform: scaleX(1);
+}
+
+.logoPc{
+    width: 240px;
+    image-rendering: auto;
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+nav .ham_header {
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+nav .ham_header .ham__container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+nav .ham_header .ham__container {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: row;
+} 
+
+.ham__iconOpen{
+    width: 35px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.logoPhone{
+    width: 180px;
+    image-rendering: auto;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+/*´´´´´´´´´´´´
+    NAVBAR DESPLEGABLE
+_____________*/
+
+.ham__menu{
+    opacity: 0.3;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 50px;
+    position: fixed;
+    top: -110%;
+    align-items: center;
+    background-color: rgb(39, 39, 39);
+}
+
+.ham__nav {
+    opacity: 0;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.ham__navLink {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.ham__navLink:hover {
+    color: gray;
+    transition: all 0.2s ease-in-out;
+}
+
+.ham__iconExit {
+    width: 35px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.ham__navContainer{
+    z-index: 200;
+}
+
+/*´´´´´´´´´´´´
+    HEADER
+_____________*/
+
+
+header{
+    background-image: url(../img/buho1-obscuro.webp);
+    background-size: cover;
+    background-position: center left;
+    height: 100vh;
+}
+
+
+/*´´´´´´´´´´´´
+AUDIO PLAYER
+_____________*/
+.audio-player__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+}
+#audio-visual{
+    height: 70px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0px;
+}
+#audio-visual .audio-wire{
+    height: 50%;
+    margin: 0px 3px;
+    padding: 0px 1.5px;
+    background-color: aliceblue;
+    animation: animateUpDown .5s infinite alternate;
+}
+
+.audio-player__container p {
+    font-size: 12px;
+    color: white;
+}
+#audio-visual .audio-wire-1{
+    animation-delay: 50ms;
+}
+#audio-visual .audio-wire-2{
+    animation-delay: 150ms;
+}
+#audio-visual .audio-wire-3{
+    animation-delay: 300ms;
+}
+#audio-visual .audio-wire-4{
+    animation-delay: 450ms;
+}
+#audio-visual .audio-wire-5{
+    animation-delay: 600ms;
+}
+#audio-visual .audio-wire-6{
+    animation-delay: 450ms;
+}
+#audio-visual .audio-wire-7{
+    animation-delay: 300ms;
+}
+#audio-visual .audio-wire-8{
+    animation-delay: 150ms;
+}
+#audio-visual .audio-wire-9{
+    animation-delay: 50ms;
+}
+@keyframes animateUpDown{
+    to{
+        height: 90%;
+    }
+    from{
+        height: 50%;
+    }
+}
+
+/*´´´´´´´´´´´´
+    TABLET
+_____________*/
+@media screen and (max-width: 830px) {
+
+    nav {
+        width: 100%;
+        height: 100%;
+        padding: 0%;
+    }
+
+    nav .link{
+        display: none;
+    }
+
+    .logoPc {
+        display: none;
+    }
+    
+    nav .ham_header {
+        display: block;
+    }
+}
+
+/*´´´´´´´´´´´´
+    PHONE
+_____________*/
+@media screen and (max-width: 430px) {
+    header{
+        height: 50vh;
+    }
+}
