@@ -164,6 +164,7 @@ header{
     background-image: url(../img/buho1-obscuro.webp);
     background-size: cover;
     background-position: center left;
+    width: auto;
     height: 100vh;
 }
 
@@ -221,6 +222,7 @@ h1{
     font-size: 16px;
     color: white;
     letter-spacing: 1px;
+    margin-bottom: 40px;
 }
 #audio-visual .audio-wire-1{
     animation-delay: 50ms;
@@ -275,7 +277,7 @@ _____________*/
 .video__text {
     width: 75%;
     margin: 0 auto;
-    padding: 0 10%;
+    padding: 0 3%;
     font-size: 22px;
 }
 .video__text2{
