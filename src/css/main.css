@@ -38,7 +38,7 @@ nav ul {
 }
 
 nav ul li > a {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
     display: block;
@@ -300,10 +300,6 @@ h2 {
 
 
 
-/*´´´´´´´´´´´´
-    TABLET
-_____________*/
-@media screen and (max-width: 830px) {
 
     
 
@@ -329,8 +325,6 @@ _____________*/
     nav .ham_header {
         display: block;
     }
-}
-    
     header{
         height: 50vh;
     }
@@ -344,3 +338,6 @@ _____________*/
     }
     
 }
+
+    
+
