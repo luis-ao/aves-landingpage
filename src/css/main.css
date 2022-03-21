@@ -9,11 +9,11 @@
 
 *{
     box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
 }
 
 body{
-    margin: 0%;
-    padding: 0%;
     font-family:'Montserrat', sans-serif;
 
     background-color: #362706;
@@ -22,7 +22,6 @@ body{
 /*´´´´´´´´´´´´
     NAVBAR
 _____________*/
-
 nav{
     display: flex;
     align-items: center;
@@ -155,6 +154,8 @@ nav .ham_header .ham__container {
     z-index: 1000;
 }
 
+
+
 /*´´´´´´´´´´´´
     HEADER
 _____________*/
@@ -164,7 +165,6 @@ header{
     background-image: url(../img/buho1-obscuro.webp);
     background-size: cover;
     background-position: center left;
-    width: auto;
     height: 100vh;
 }
 
@@ -176,7 +176,7 @@ _____________*/
     border-radius: 4px;
     font-size: 22px;
     text-align: center;
-    padding: 40px;
+    padding: 70px;
     width: 560px;
     position: absolute;
     z-index: 70;
@@ -192,6 +192,7 @@ h1{
     font-family:'Roboto', sans-serif;
     font-size: 50px;
     letter-spacing: 2px;
+    margin-bottom: 40px;
 }
 
 .audio-player__container{
@@ -222,8 +223,8 @@ h1{
     font-size: 16px;
     color: white;
     letter-spacing: 1px;
-    margin-bottom: 40px;
 }
+
 #audio-visual .audio-wire-1{
     animation-delay: 50ms;
 }
@@ -277,7 +278,7 @@ _____________*/
 .video__text {
     width: 75%;
     margin: 0 auto;
-    padding: 0 3%;
+    padding: 2%;
     font-size: 22px;
 }
 .video__text2{
