@@ -189,7 +189,7 @@ _____________*/
 
 h1{
     font-family:'Roboto', sans-serif;
-    font-size: 48px;
+    font-size: 50px;
     letter-spacing: 2px;
 }
 
@@ -260,7 +260,7 @@ h1{
 }
 
 /*´´´´´´´´´´´´
-VIDEOS
+VIDEO
 _____________*/  
 .video-container {
     text-align: center;
@@ -275,14 +275,22 @@ _____________*/
 .video__text {
     width: 75%;
     margin: 0 auto;
+    padding: 0 10%;
+    font-size: 22px;
+}
+.video__text2{
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
   
-h3 {
-    font-size: 1.6em;
-    padding-top: 50px;
-  
-    color: white;
-    
+h2 {
+    margin-top: 40px;
+    font-family:'Roboto', sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
 }
 
   
