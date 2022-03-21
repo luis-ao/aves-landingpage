@@ -3,8 +3,8 @@
 } 
 ::-webkit-scrollbar-thumb{
     /* background: linear-gradient(#FF3575, #9C8AFF); */
-    background-color: rgba(255, 255, 255, 0.726);
-    border-radius: 4px;
+    background-color: #ACB992;
+    border-radius: 3px;
 }
 
 *{
@@ -15,9 +15,8 @@ body{
     margin: 0%;
     padding: 0%;
     font-family:'Montserrat', sans-serif;
-    font-size: 16px;
 
-    background-color: black;
+    background-color: #362706;
 }
 
 /*´´´´´´´´´´´´
@@ -28,7 +27,7 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 40px;
+    padding: 15px 70px;
 }
 
 nav ul {
@@ -39,10 +38,12 @@ nav ul {
 }
 
 nav ul li > a {
-    font-size: 20px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
     display: block;
     position: relative;
-    padding: 20px 15px 10px 15px;
+    padding: 20px 40px;
     text-decoration: none;
 
     color: white;
@@ -59,7 +60,7 @@ nav ul li .link::before{
     transform: scalex(0);
     transition: transform 0.3s ease;
 
-    background-color: white;
+    background-color: #ACB992;
 }
 
 nav ul li .link:hover::before {
@@ -67,11 +68,14 @@ nav ul li .link:hover::before {
 }
 
 .logoPc{
-    width: 240px;
+    width: 260px;
     image-rendering: auto;
-    padding-left: 10px;
-    padding-top: 20px;
+    padding-top: 30px;
 }
+
+/*´´´´´´´´´´´´
+    NAVBAR DESPLEGABLE
+_____________*/
 
 nav .ham_header {
     display: none;
@@ -106,10 +110,6 @@ nav .ham_header .ham__container {
     padding-left: 30px;
     padding-top: 20px;
 }
-
-/*´´´´´´´´´´´´
-    NAVBAR DESPLEGABLE
-_____________*/
 
 .ham__menu{
     opacity: 0.3;
@@ -152,7 +152,7 @@ _____________*/
 }
 
 .ham__navContainer{
-    z-index: 200;
+    z-index: 1000;
 }
 
 /*´´´´´´´´´´´´
@@ -169,13 +169,35 @@ header{
 
 
 /*´´´´´´´´´´´´
-AUDIO PLAYER
+AUDIO PLAYER CARD
 _____________*/
+#audio-player-card{
+    border-radius: 4px;
+    font-size: 22px;
+    text-align: center;
+    padding: 40px;
+    width: 560px;
+    position: absolute;
+    z-index: 70;
+    top: 280px;
+    right: 140px;
+
+    color: white;
+    background-color: #464E2E;
+    box-shadow: 10px 10px 5px #ACB992;
+}
+
+h1{
+    font-family:'Roboto', sans-serif;
+    font-size: 48px;
+    letter-spacing: 2px;
+}
+
 .audio-player__container{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     flex-direction: column;
 }
@@ -191,13 +213,14 @@ _____________*/
     height: 50%;
     margin: 0px 3px;
     padding: 0px 1.5px;
-    background-color: aliceblue;
+    background-color: white;
     animation: animateUpDown .5s infinite alternate;
 }
 
 .audio-player__container p {
-    font-size: 12px;
+    font-size: 16px;
     color: white;
+    letter-spacing: 1px;
 }
 #audio-visual .audio-wire-1{
     animation-delay: 50ms;
@@ -226,6 +249,7 @@ _____________*/
 #audio-visual .audio-wire-9{
     animation-delay: 50ms;
 }
+
 @keyframes animateUpDown{
     to{
         height: 90%;
@@ -236,9 +260,47 @@ _____________*/
 }
 
 /*´´´´´´´´´´´´
+VIDEOS
+_____________*/  
+.video-container {
+    text-align: center;
+    padding: 50px 0;
+  
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    color: white;
+}
+.video__text {
+    width: 75%;
+    margin: 0 auto;
+}
+  
+h3 {
+    font-size: 1.6em;
+    padding-top: 50px;
+  
+    color: white;
+    
+}
+
+  
+ 
+
+
+
+/*´´´´´´´´´´´´
     TABLET
 _____________*/
 @media screen and (max-width: 830px) {
+
+    
+
+/*´´´´´´´´´´´´
+    PHONE
+_____________*/
+@media screen and (max-width: 430px) {
 
     nav {
         width: 100%;
@@ -258,12 +320,17 @@ _____________*/
         display: block;
     }
 }
-
-/*´´´´´´´´´´´´
-    PHONE
-_____________*/
-@media screen and (max-width: 430px) {
+    
     header{
         height: 50vh;
     }
+
+
+    #audio-player-card{
+        z-index: 0 !important;
+        position: initial !important;
+        width: 100%;
+        box-shadow: none;
+    }
+    
 }

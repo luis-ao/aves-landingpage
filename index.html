@@ -6,6 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -86,122 +91,53 @@
     <!-- ////// 
      AUDIO PLAYER CARD  
     ////// -->
+    <section id="audio-player-card">
+      <h1>Búho</h1>
 
-    <div class="audio-player__container">
-      <!-- <audio id="player" src="src/img/buho.mp3"></audio> -->
+      <p>
+        Muchas personas son las que dicen haber escuchado alguna vez a ésta ave y gracias a ello han decidido ir a la búsqueda del búho que lo emite, para poder observarlo, pero se han pasado horas sin poder encontrarlo.
+      </p>
 
-      <div id="audio-visual" onclick="playPause()">
-        <div class="audio-wire audio-wire-1"></div>
-        <div class="audio-wire audio-wire-2"></div>
-        <div class="audio-wire audio-wire-3"></div>
-        <div class="audio-wire audio-wire-4"></div>
-        <div class="audio-wire audio-wire-5"></div>
-        <div class="audio-wire audio-wire-6"></div>
-        <div class="audio-wire audio-wire-7"></div>
-        <div class="audio-wire audio-wire-8"></div>
-        <div class="audio-wire audio-wire-9"></div>
-    </div>
-      <p>Click para escuchar el ulular de un Búho</p>
-    <audio src="src/img/buho.mp3" id="music" loop autoplay></audio>
-    </div>
+      <div class="audio-player__container">
+        <!-- <audio id="player" src="src/img/buho.mp3"></audio> -->
 
+        <div id="audio-visual" onclick="playPause()">
+          <div class="audio-wire audio-wire-1"></div>
+          <div class="audio-wire audio-wire-2"></div>
+          <div class="audio-wire audio-wire-3"></div>
+          <div class="audio-wire audio-wire-4"></div>
+          <div class="audio-wire audio-wire-5"></div>
+          <div class="audio-wire audio-wire-6"></div>
+          <div class="audio-wire audio-wire-7"></div>
+          <div class="audio-wire audio-wire-8"></div>
+          <div class="audio-wire audio-wire-9"></div>
+        </div>
 
-    <!-- <section id="banner">
-        <h2>Halo Infinite</h2>
-        <p>
-          <a href="#" class="green-button">
-            Get it Now <span class="material-icons">&#xe5cc;</span>
-          </a>
-        </p>
-        <p>Available now with Xbox Game Pass</p>
-        <p>
-          <a href="#" class="green-link"
-            >JOIN NOW <span class="material-icons">&#xe5cc;</span></a
-          >
-        </p>
-      </section> -->
+        <p>Click para escuchar el ulular de un Búho</p>
+        
+        <audio src="src/img/buho.mp3" id="music" loop autoplay></audio>
+      </div>
+    </section>
+    
+    <!-- ////// 
+     VIDEOS  
+    ////// -->
+    <section class="video-container">
+        <h2>Un ave hipnotizante que pocos han visto...</h2>
 
-    <!-- <section id="videos">
-        <h2>BECOME</h2>
-
-        <p class="w-75">
-          The legendary Halo series returns with the most expansive Master Chief
-          campaign yet and a ground-breaking free to play multiplayer
-          experience.
+        <p class="video__text">
+          El motivo es que el búho no solo cuenta con grandes ojos sino también con un oído exquisito el cuál te escucha incluso antes de que tu escuches su ulular, por lo cual es posible que al buscarlo el ave ya se escondido o se ha marchado. 
         </p>
 
-        <h3>Trailers and Gameplay</h3>
+        <p class="video__text2">Te compartimos algunos vídeos para que puedas apreciar la belleza del búho</p>
 
-        <div id="slider">
-          <div id="controls">
-            <button id="prev">
-              <span class="material-icons">&#xe5e0;</span>
-            </button>
-            <button id="next">
-              <span class="material-icons">&#xe5e1;</span>
-            </button>
-          </div>
-          <div id="current"></div>
-
-          <div id="videos-container"></div>
-        </div>
-      </section> -->
-
-    <!-- <section id="multi-player">
-        <div class="info">
-          <h2>LEGENDARY MULTIPLAYER, FREED</h2>
-          <p>
-            The next era of Halo begins! To celebrate the 20th Anniversary of
-            the franchise, Halo Infinite's multiplayer beta is available now and
-            free to play on Xbox and PC. Begin your personal Spartan journey
-            today with Season 1, “Heroes of Reach”, and stay tuned for upcoming,
-            limited-time in-game events and exclusive rewards.
-          </p>
-        </div>
-      </section> -->
-
-    <!-- <section id="get-the-game">
-        <h2>Get the game.</h2>
-
-        <div class="item-store">
-          <div class="left">
-            <img src="./src/img/game.png" alt="" />
-          </div>
-
-          <div class="right">
-            <div class="info-product">
-              <h3>Halo Infinite (Campaign)</h3>
-              <h4>Included with Xbox Game Pass Play Halo</h4>
-              <p>
-                Infinite and over 100 more high-quality games for one low
-                monthly price with Xbox Game Pass.
-              </p>
-              <button class="green-button">
-                JOIN XBOX GAME PASS <span class="material-icons">&#xe5cc;</span>
-              </button>
-
-              <h4>Buy Halo Inifnite</h4>
-              <p>$59.99 USD</p>
-              <select name="" id="">
-                <option value="xbox">Xbox</option>
-                <option value="windows">Windows 10 PC</option>
-                <option value="steam">Steam</option>
-              </select>
-              <p>
-                <button class="green-button">
-                  BUY NOW <span class="material-icons">&#xe5cc;</span>
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> -->
+      </section>
+  
 
   </div>
 
   <script src="src/js/nav.js" type="module"></script>
-
-  <script src="src/js/main.js"></script>
+  <script src="src/js/audio-player.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 
